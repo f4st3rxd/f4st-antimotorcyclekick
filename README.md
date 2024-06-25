@@ -1,2 +1,2 @@
 # f4st-antimotorcyclekick
-Block motorcycle kick
+**[standalone] Block motorcycle kick**
