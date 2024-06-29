@@ -11,6 +11,7 @@ CreateThread(function()
         
         local vehicle = GetVehiclePedIsIn(PlayerPedId(), false)
         if GetVehicleClass(vehicle) == 8 then 
+            if not GetSelectedPedWeapon(PlayerPedId()) == GetHashKey("WEAPON_UNARMED") then return end
             if IsControlPressed(0, 73) or IsControlPressed(0, 25) or IsControlPressed(0, 24)  then
                 ClearPedTasks(PlayerPedId())
             end
